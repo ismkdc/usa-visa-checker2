@@ -4,6 +4,10 @@ from bs4 import BeautifulSoup
 
 TELEGRAM_BOT_TOKEN = "bottoken"
 CHAT_ID = "chatid"
+USERNAME = 'username'
+PASSWORD = 'passwd'
+
+# CHANGE APPOINMENT ID AND APPLICANTS AT REQ3 BEFORE USING !!!
 
 # Function to send message to Telegram
 def send_telegram_message(message):
@@ -41,8 +45,8 @@ def check_visa_dates():
     # Step 2: Perform the login request
     login_url = 'https://ais.usvisa-info.com/tr-tr/niv/users/sign_in'
     login_data = {
-        'user[email]': 'USERNAME',
-        'user[password]': 'PASSWORD',
+        'user[email]': USERNAME,
+        'user[password]': PASSWORD,
         'policy_confirmed': '1',
         'commit': 'Oturum+Aç'
     }
